@@ -1,0 +1,110 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "bio": "CIP119:bio",
+        "email": "CIP119:email",
+        "givenName": "CIP119:givenName",
+        "motivations": "CIP119:motivations",
+        "objectives": "CIP119:objectives",
+        "paymentAddress": "CIP119:paymentAddress",
+        "qualifications": "CIP119:qualifications",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject"
+          }
+        },
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [
+    {
+      "witness": {
+        "publicKey": {
+          "@value": "a4010103272006215820cc5ae988e50e777612a806f846c67ac36bcf82d65b671b1ad82f2630f63dd5c5"
+        },
+        "signature": {
+          "@value": "845829a201276761646472657373581cfcc1946fe92b7f27a8b21d6639bffc72be07157b2745ef204d7467c0a166686173686564f5581cd6c9c3f648c5d5c6a7dc07e42b79179ef0b306c138c7e838bd77a94f5840c9cfa09d357da5048e08b2a61f6a5939dab83711adf8614e7bbe370585f76f1db693d9161ee41429fdbe713c43605164cb14478e3c9e34efdfc68cf0e0cee106"
+        },
+        "witnessAlgorithm": {
+          "@value": "Ed25519"
+        }
+      }
+    }
+  ],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "bio": {
+      "@value": "Cardano's #1 oomfie"
+    },
+    "email": {
+      "@value": "nathankanapi@gmail.com"
+    },
+    "givenName": {
+      "@value": "Nathan Angelo Lopez Kanapi"
+    },
+    "motivations": {
+      "@value": "My singular motivation for Cardano is to represent the voices of people overlooked by majority of the active community members that only converse and hold discussions in English, thus miss a lot of nuance from both the Eastern and Southern community members.\n"
+    },
+    "objectives": {
+      "@value": "Despite the fact that Cardano wants to on-board more people from the international community, majority of the decisions and solutions provided by Cardano representatives seems only focused on American or European upper middle class users. My objective is to be the voice for the global south and Eastern demographics often overlooked by most Cardano community members."
+    },
+    "paymentAddress": {
+      "@value": "addr1qxepwk6mvkrkxngqcrt8p8ys3r3an2mtrjwxvlljl0evkul7r0lvj69p7fgpw5nczgghurchgjcfldjwg0myas0cqkrqgkls6g"
+    },
+    "qualifications": {
+      "@value": "I majored in AB-Psychology (US based) with a log of modern Filipino psychology included. I also have a degree in the culinary arts and restaurant management. I am a small business owner so I have experience with basic legalities for setting up local businesses. My brother is a lawyer. I also have experience with Japanese business laws when I worked there as a manager. Before I opened up a business, I worked several years in a kitchen and in US IT outsourced HR. I speak English, Filipino and Japanese fluently. I can also hold most conversations in Spanish and am currently learning Korean (wife is Korean). In terms of cultural heritage, I am part Spanish and Chinese so I'm familiar with both cultures. While individually unremarkable, I believe that combined, all my life experiences have provided me a unique view on how global communities operate and the challenges of cross cultural communication."
+    },
+    "references": [
+      {
+        "@type": "Other",
+        "label": {
+          "@value": "Twitter"
+        },
+        "uri": {
+          "@value": "@Oomfiefurrypost"
+        }
+      }
+    ]
+  }
+}
